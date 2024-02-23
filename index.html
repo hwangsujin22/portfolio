@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 기본서식 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 메인서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 폰트 어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1><a href="index.html" title="포트폴리오 바로가기"><img src="./images/logo.png" alt="로고"></a></h1>
+  </header>
+
+  <!-- 메인영역 시작 -->
+  
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- 1. 인트로 -->
+        <section id="intro" class="swiper-slide">
+          <div class="space_box">
+            <ul>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+          <div class="document">
+            <p><span class="yellow01">&#x0024;</span><span class="yellow02">&#x0028;</span><span class="blue01">document</span><span class="yellow02">&#x0029;</span><span class="yellow01">.ready</span><span class="yellow02">&#x0028;</span><span class="blue02">function</span><span class="purple">&#x0028;&#x0029;&#x007B;</span></p>
+            <p><span class="purple">&#x007D;</span><span class="yellow02">&#x0029;</span>;</p>
+          </div>
+          <div class="title_box">
+            <ul class="typing-txt">
+              <li>web</li>
+              <li class="orange">publisher</li>
+              <li>// HWANG SUJIN</li>
+            </ul>
+            <ul class="cursor">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="scroll_icon">
+            <p>&nbsp;</p>
+          </div>
+        </section>
+
+        <!-- 2. 프로필 -->
+        <section id="profile" class="swiper-slide">
+          <article>
+            <h2>&#x0023;profile&#x007B;</h2>
+            <div class="profile_img">
+              <video class="video" src="./images/sujin_move.mp4" muted autoplay playsinline loop>
+              </video>
+            </div>
+            <div class="profile_info">
+              <h3>명확한 해답을 내며 응용에 따라 무궁무진하게 결과를 만들어 낼 수 있는 코딩<br> 그 자체, 신입 웹퍼블리셔 황수진입니다.</h3>
+              <ul>
+                <li>
+                  <p>NAME : 황수진</p>
+                  <p>BIRTH : 1993.10.22</p>
+                  <p>E&#x002D;MAIL : goddostnwls&#x0040;naver.com</p>
+                  <p>PHONE : 010.8603.1022</p>
+                  <p>MBTI : 깔끔, 깨끗의 대명사 <span class="mbti">ESTJ</span></p>
+                  <p>CHARACTER : <span class="tag">&#x0023;꼼꼼함</span> <span class="tag">&#x0023;사명감</span><br>
+                    <span class="tag">&#x0023;센스쟁이</span> <span class="tag">&#x0023;골든리트리버</span> <span class="tag">&#x0023;똑부러짐</span></p>
+                  <p>CERTIFICATE : 웹디자인기능사</p>
+                </li>
+                <li>
+                  <p>SKILLS : </p>
+                  <div class="skill">
+                    <p class="stick s01"><span class="gauge g01"></span></p>
+                    <p>기획&#x0028;70&#x0025;&#x0029;</p>
+                    <p class="stick s02"><span class="gauge g02"></span></p>
+                    <p>ui/ux 디자인&#x0028;75&#x0025;&#x0029;</p>
+                    <p class="stick s03"><span class="gauge g03"></span></p>
+                    <p>html, css&#x0028;90&#x0025;&#x0029;</p>
+                    <p class="stick s04"><span class="gauge g04"></span></p>
+                    <p>javascript&#x0028;60&#x0025;&#x0029;</p>
+                    <p class="stick s05"><span class="gauge g05"></span></p>
+                    <p>jquery&#x0028;70&#x0025;&#x0029;</p>
+                    <p class="stick s06"><span class="gauge g06"></span></p>
+                    <p>sass&#x0028;40&#x0025;&#x0029;</p>
+                    <p class="stick s07"><span class="gauge g07"></span></p>
+                    <p>웹표준, 접근성 test&#x0028;60&#x0025;&#x0029;</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+        </section>
+
+        <!-- 3. 프로젝트 1 -->
+        <section id="project_1" class="swiper-slide">
+          <article>
+            <h2>&#x0023;project 1&#x007B;</h2>
+            <div class="pj_1_mockup">
+
+              <div class="pc_tool p_01">
+                <img src="./images/pc_tool.png" alt="pc툴">
+              </div>
+              <div class="pc_img_1">
+                <img src="./images/neker_pc.png" alt="pc사이트">
+              </div>
+
+              <div class="m_tool m_01">
+                <img src="./images/mobile_tool.png" alt="mobile툴">
+              </div>
+              <div class="m_img_1">
+                <img src="./images/neker_mobile.png" alt="mobile사이트">
+              </div>
+
+            </div>
+            <div class="pj_info">
+              <h3>neker</h3>
+              <p>좀 더 발랄한 뷰티 페이지 느낌을 느낄수 있도록 메인컬러를 전체적으로 배치하고 동적인 효과를 넣어 반응형 페이지로 재구성하였습니다.</p>
+              <ul>
+                <li>
+                  <p>type</p>
+                  <p>page</p>
+                  <p>used tool</p>
+                  <p>part</p>
+                  <p>contribution</p>
+                  <p><a href="javascript:void(0);" title="기획서 바로가기" class="button process01">process</a></p>
+                  <p><a href="https://hwangsujin22.github.io/neker/" title="웹사이트 바로가기" target="blank" class="button web">website</a></p>
+                </li>
+                <li>
+                  <p>Responsive web</p>
+                  <p>Main</p>
+                  <p>Figma, HTML, CSS, JS&#x0028;jquery&#x0029;</p>
+                  <p>Personal portfolio</p>
+                  <p>100&#x0025;</p>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+          <div class="bg">&nbsp;</div>
+        </section>
+
+        <!-- 4. 프로젝트 2 -->
+        <section id="project_2" class="swiper-slide">
+          <article>
+            <h2>&#x0023;project 2&#x007B;</h2>
+            <div class="pj_2_mockup">
+
+              <div class="pc_tool p_02">
+                <img src="./images/pc_tool.png" alt="pc툴">
+              </div>
+              <div class="pc_img_2">
+                <img src="" alt="pc사이트">
+              </div>
+
+              <div class="m_tool m_02">
+                <img src="./images/mobile_tool.png" alt="mobile툴">
+              </div>
+              <div class="m_img_2">
+                <img src="" alt="mobile사이트">
+              </div>
+
+            </div>
+            <div class="pj_info">
+              <h3>chukjibub</h3>
+              <p>축지법&#x0021; 축제를 즐기는 법. 원하는 축제를 찾아볼 수 있으며 축제가 열리는 그 지역을 다양하게 즐길 수 있도록 정보를 제공합니다.</p>
+              <ul>
+                <li>
+                  <p>type</p>
+                  <p>page</p>
+                  <p>used tool</p>
+                  <p>part</p>
+                  <p>contribution</p>
+                  <p><a href="javascript:void(0);" title="기획서 바로가기" class="button process02">process</a></p>
+                  <p><a href="https://hwangsujin22.github.io/mayfieldhotel/" title="웹사이트 바로가기" target="blank" class="button web">website</a></p>
+                </li>
+                <li>
+                  <p>Adative web</p>
+                  <p>Main, login, join, sub</p>
+                  <p>Figma, HTML, CSS, JS&#x0028;jquery&#x0029;</p>
+                  <p>Team project</p>
+                  <p>Main page&#x0028;100&#x0025;&#x0029;</p>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+          <div class="bg bg02">&nbsp;</div>
+        </section>
+
+        <!-- 5. 프로젝트 3 -->
+        <section id="project_3" class="swiper-slide">
+          <article>
+            <h2>&#x0023;project 3&#x007B;</h2>
+            <div class="pj_3_mockup">
+
+              <div class="pc_tool p_03">
+                <img src="./images/pc_tool.png" alt="pc툴">
+              </div>
+              <div class="pc_img_3">
+                <img src="./images/mayfield_pc.png" alt="pc사이트">
+              </div>
+
+              <div class="m_tool m_03">
+                <img src="./images/mobile_tool.png" alt="mobile툴">
+              </div>
+              <div class="m_img_3">
+                <img src="./images/mayfield_mobile.png" alt="mobile사이트">
+              </div>
+
+            </div>
+            <div class="pj_info">
+              <h3>mayfield hotel</h3>
+              <p>메이필드 호텔 공식 홈페이지를 다양한 콘텐츠 형식을 추가하여 반응형 웹페이지로 클론 코딩하였습니다.</p>
+              <ul>
+                <li>
+                  <p>type</p>
+                  <p>page</p>
+                  <p>used tool</p>
+                  <p>part</p>
+                  <p>contribution</p>
+                  <p><a href="javascript:void(0);" title="기획서 바로가기" class="button process03">process</a></p>
+                  <p><a href="https://hwangsujin22.github.io/mayfieldhotel/" title="웹사이트 바로가기" target="blank" class="button web">website</a></p>
+                </li>
+                <li>
+                  <p>Responsive web</p>
+                  <p>Main</p>
+                  <p>Figma, HTML, CSS, JS&#x0028;jquery&#x0029;</p>
+                  <p>Clone coding</p>
+                  <p>Plan&#x0028;20&#x0025;&#x0029;, Coding&#x0028;100&#x0025;&#x0029;</p>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+          <div class="bg bg03">&nbsp;</div>
+        </section>
+
+        <!-- 6. 프로젝트 4 -->
+        <section id="project_4" class="swiper-slide">
+          <article>
+            <h2>&#x0023;project 4&#x007B;</h2>
+            <div class="pj_4_mockup">
+
+              <div class="pc_tool p_04">
+                <img src="./images/pc_tool.png" alt="pc툴">
+              </div>
+              <div class="pc_img_4">
+                <img src="./images/harim_pc.png" alt="pc사이트">
+              </div>
+
+              <div class="m_tool m_04">
+                <img src="./images/mobile_tool.png" alt="mobile툴">
+              </div>
+              <div class="m_img_4">
+                <img src="./images/harim_mobile.png" alt="mobile사이트">
+              </div>
+
+            </div>
+            <div class="pj_info">
+              <h3>harim pet food</h3>
+              <p>펫 페어런츠들의 마음으로 웰빙푸드를 제공하는 하림펫푸드의 홈페이지를 반응형 페이지로 클론 코딩하였습니다.</p>
+              <ul>
+                <li>
+                  <p>type</p>
+                  <p>page</p>
+                  <p>used tool</p>
+                  <p>part</p>
+                  <p>contribution</p>
+                  <p><a href="javascript:void(0);" title="기획서 바로가기" class="button process04">process</a></p>
+                  <p><a href="javascript:void(0);" title="웹사이트 바로가기" target="blank" class="button web">website</a></p>
+                </li>
+                <li>
+                  <p>Responsive Web</p>
+                  <p>Main</p>
+                  <p>Figma, HTML, CSS, JS&#x0028;jquery&#x0029;</p>
+                  <p>Clone coding</p>
+                  <p>Plan&#x0028;20&#x0025;&#x0029;, Coding&#x0028;100&#x0025;&#x0029;</p>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+          <div class="bg bg04">&nbsp;</div>
+        </section>
+
+        <!-- 7. UI/UX 디자인 -->
+        <section id="design" class="swiper-slide">
+          <article>
+            <h2>&#x0023;UI/UX DESIGN&#x007B;</h2>
+            <div id="design_box">
+              <ul>
+                <!-- 윤슬 포스터 -->
+                <li class="d01">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/typography_mockup.jpg" alt="작품1">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button">VIEW DETAIL</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>1일</span></h3>
+                          <h3>part</h3>
+                          <p>타이포그래피</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>'centaur' 폰트를 사용하여 타이포그래피 디자인을 제작하였습니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>윤슬 포스터</h3>
+                    <h4>타이포그래피 디자인</h4>
+                  </div>
+                </li>
+
+                <!-- 컨버스 패턴 -->
+                <li class="d02">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/converse_design.jpg" alt="작품2">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button2">VIEW DETAIL</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>1일</span></h3>
+                          <h3>part</h3>
+                          <p>패턴 디자인</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>패턴을 활용하여 디자인한 컨버스 제품 홍보 포스터입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>컨버스 홍보 포스터</h3>
+                    <h4>패턴 디자인</h4>
+                  </div>
+                </li>
+
+                <!-- 윤슬 로고 -->
+                <li class="d03">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/yunseul_logo_mockup.jpg" alt="작품3">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button">VIEW DETAIL</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>2일</span></h3>
+                          <h3>part</h3>
+                          <p>패턴 디자인</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>패턴을 활용하여 디자인한 컨버스 제품 홍보 포스터입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>윤슬 로고</h3>
+                    <h4>로고 디자인</h4>
+                  </div>
+                </li>
+
+                <!--  -->
+                <li class="d04">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/converse_design_img.jpg" alt="작품4">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button">MORE VIEW</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>1일</span></h3>
+                          <h3>part</h3>
+                          <p>패턴 디자인</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>패턴을 활용하여 디자인한 컨버스 제품 홍보 포스터입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>컨버스 홍보 포스터</h3>
+                    <h4>패턴 디자인</h4>
+                  </div>
+                </li>
+
+                <!--  -->
+                <li class="d05">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/converse_design_img.jpg" alt="작품4">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button">MORE VIEW</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>1일</span></h3>
+                          <h3>part</h3>
+                          <p>패턴 디자인</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>패턴을 활용하여 디자인한 컨버스 제품 홍보 포스터입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>컨버스 홍보 포스터</h3>
+                    <h4>패턴 디자인</h4>
+                  </div>
+                </li>
+
+                <!-- 윤슬 사이트 ui/ux 디자인 -->
+                <li class="d06">
+                  <div class="card">
+                    <div class="card_inner">
+                      <div class="front">
+                        <img src="./images/yunseul_mobile.jpg" alt="작품4">
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li><a href="javascript:void(0);" title="자세히 보기" class="c_button2">MORE VIEW</a></li>
+                        </ul>
+                        <div class="card_info">
+                          <h3>period <span>2주</span></h3>
+                          <h3>part</h3>
+                          <p>패턴 디자인</p>
+                          <h3>used tool</h3>
+                          <p>일러스트</p>
+                          <p>패턴을 활용하여 디자인한 컨버스 제품 홍보 포스터입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card_title">
+                    <h3>컨버스 홍보 포스터</h3>
+                    <h4>패턴 디자인</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p>&#x007D;</p>
+          </article>
+        </section>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <nav>
+        <ul class="n_bg">
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+        <div class="gnb swiper-pagination"></div>
+      </nav>
+
+      <!-- 프로세스 모달창 -->
+      <div class="process_modal p_modal01">
+        <div class="process_modal_container">
+          <div class="title">
+            <p>NEKER PROCESS</p>
+            <a href="javascript:void(0);" title="닫기"><i class="fas fa-times"></i></a></i>
+          </div>
+          <div>
+            <iframe src="./process/neker_process.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="process_modal p_modal02">
+        <div class="process_modal_container">
+          <div class="title">
+            <p>CHUKJIBUB PROCESS</p>
+            <a href="javascript:void(0);" title="닫기"><i class="fas fa-times"></i></a></i>
+          </div>
+          <div>
+            <iframe src="./process/neker_process.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <!-- 제이쿼리 UI 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./script/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script/swiper.js"></script>
+
+</body>
+
+</html>

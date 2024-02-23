@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 메인 서식 */
+body{
+  color:#333;
+  font-family:'Montserrat', 'IBM Plex Sans KR', sans-serif;
+  font-size:1.1rem;
+}
+main{width:100%;}
+main h2{font-size:3rem;text-transform:uppercase;line-height:200%;}
+main > div{padding:80px 8% 50px;}
+main h3{
+  font-size:2rem;line-height:200%; color:#fff;
+  display:inline-block;
+  position:relative;
+}
+main h4{font-size:1.5rem;line-height:200%;color:#777;}
+.outside:after{
+  position:absolute;
+  left:0px; top:0px;
+  content:attr(data-text);
+  -webkit-text-stroke: 5px #333;
+  z-index:-1;
+}
+.color_box > li, .font_box li, .conponents{padding:20px 50px;}
+
+/* 스타일가이드 서식 */
+.guide ul{display:flex; flex-wrap:wrap;}
+
+/* 컬러 */
+.color{
+  width:150px; height:150px;
+  border:1px solid #ccc;
+  border-radius:50%;
+  position:relative;
+  margin:40px 40px;
+}
+.color > p{position:absolute;bottom:-45px; left:34px;}
+.c_box01{background:#ffd0d0;}
+.c_box02{background:#ffefc5;}
+.c_box03{background:#ff3535;}
+
+/* 폰트 */
+.font{margin:50px 0px; padding:30px; border:1px solid #333;}
+.font p b{text-decoration:underline; padding:0px 70px; font-size:1.2rem;}
+.font p:nth-child(2){text-transform:uppercase;}
+.font p:nth-child(2) b{padding-right:95px;text-transform:none;}
+.font p:last-child{text-indent:282px;}
+.f_box01 > div{font-weight:bold;}
+.f_box01 > div > p:first-child{font-family:'Noto Sans Korean';}
+.f_box01 > div > p:not(p:first-child){font-family:'Montserrat';}
+.f_box02 > div > p:first-child{font-family:'Noto Sans Korean';}
+.f_box02 > div > p:not(p:first-child){font-family:'Montserrat';}
+
+/* 컴포넌트 */
+.conponents > ul{padding:30px 30px;width:100%;}
+.conponents > ul img{width:70%;padding-left:40px;}
+.conponents > ul:first-of-type > li img{padding-left:64px;}
+
+/* 리스폰시브 서식 */
+.responsive > ul:first-of-type{display:flex;width:100%;justify-content:space-between;padding:30px 0px;}
+.responsive > ul > li b{padding-right:20px;}
+.responsive > ul:last-of-type > li img{width:100%;border:1px solid #ccc;}
