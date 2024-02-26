@@ -76,7 +76,7 @@ $(document).ready(function(){
   const P_04 = $('.p_04');
 
   p_01.mouseenter(function(){
-    $(this).parent().find('div:nth-child(2) img').stop().animate({'top':'-892px'},5000);
+    $(this).parent().find('div:nth-child(2) img').stop().animate({'top':'-950px'},6000);
   });
   p_02.mouseenter(function(){
     $(this).parent().find('div:nth-child(2) img').animate({'top':'-892px'},6000);
@@ -99,7 +99,7 @@ $(document).ready(function(){
   const m_04 = $('.m_04');
 
   m_01.mouseenter(function(){
-    $(this).parent().find('div:last-child img').stop().animate({'top':'-1018px'},6000);
+    $(this).parent().find('div:last-child img').stop().animate({'top':'-1482px'},8000);
   });
   m_02.mouseenter(function(){
     $(this).parent().find('div:last-child img').animate({'top':'-1018px'},6000);
