@@ -117,7 +117,7 @@ $(document).ready(function(){
   // 프로세스 모달창 띄우기 ------------------------------------------------------------------
   const process_btn01 = $('.process01');
   // const process_btn02 = $('.process02');
-  // const process_btn03 = $('.process03');
+  const process_btn03 = $('.process03');
   // const process_btn04 = $('.process04');
   const close_btn = $('i.fa-times');
 
@@ -127,9 +127,9 @@ $(document).ready(function(){
   // process_btn02.click(function(){
   //   $('.p_modal02').show();
   // });
-  // process_btn03.click(function(){
-  //   $('.p_modal03').show();
-  // });
+  process_btn03.click(function(){
+    $('.p_modal03').show();
+  });
   // process_btn04.click(function(){
   //   $('.p_modal04').show();
   // });
