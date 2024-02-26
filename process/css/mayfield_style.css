@@ -48,9 +48,10 @@ main h4{font-size:1.5rem;line-height:200%;color:#777;}
 
 /* 폰트 */
 .font{margin:50px 0px; padding:30px; border:1px solid #333;}
-.font p b{text-decoration:underline; padding:0px 70px; font-size:1.2rem;}
+.font p b{text-decoration:underline;font-size:1.2rem;padding-left:70px;}
+.font p:first-child b{ padding-right:100px;}
 .font p:nth-child(2){text-transform:uppercase;}
-.font p:nth-child(2) b{padding-right:95px;text-transform:none;}
+.font p:nth-child(2) b{padding-right:70px;text-transform:none;}
 .font p:last-child{text-indent:282px;}
 .f_box01 > div{font-weight:bold;}
 .f_box01 > div > p:first-child{font-family:'맑은 고딕';}
@@ -68,4 +69,6 @@ main h4{font-size:1.5rem;line-height:200%;color:#777;}
 /* 리스폰시브 서식 */
 .responsive > ul:first-of-type{display:flex;width:100%;justify-content:space-between;padding:30px 0px;}
 .responsive > ul > li b{padding-right:20px;}
-.responsive > ul:last-of-type > li img{width:100%;border:1px solid #ccc;}
+.responsive > ul:last-of-type > li:first-child img{width:100%;border:1px solid #ccc;}
+.responsive > ul:last-of-type > li:last-child{text-align:center;}
+.responsive > ul:last-of-type > li:last-child img{width:80%;margin-top:100px;}
