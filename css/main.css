@@ -253,7 +253,6 @@ header h1 img {
 
 .profile_info > ul > li:first-child {
   width: 460px;
-  padding-right: 10px;
 }
 
 .profile_info > ul > li:first-child > p:nth-child(6),
