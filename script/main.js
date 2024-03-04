@@ -118,7 +118,7 @@ $(document).ready(function(){
   const process_btn01 = $('.process01');
   // const process_btn02 = $('.process02');
   const process_btn03 = $('.process03');
-  // const process_btn04 = $('.process04');
+  const process_btn04 = $('.process04');
   const close_btn = $('i.fa-times');
 
   process_btn01.click(function(){
@@ -130,9 +130,9 @@ $(document).ready(function(){
   process_btn03.click(function(){
     $('.p_modal03').show();
   });
-  // process_btn04.click(function(){
-  //   $('.p_modal04').show();
-  // });
+  process_btn04.click(function(){
+    $('.p_modal04').show();
+  });
   close_btn.click(function(){
     $('.process_modal').hide();
   });
