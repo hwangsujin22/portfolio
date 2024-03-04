@@ -551,8 +551,12 @@ header h1 img {
   border: 1px solid #fff;
 }
 
+.d03 .front img {
+  width: 104%;
+}
+
 .d03 .back {
-  background: #fff;
+  background: #FFC3B0;
 }
 
 .d04 .back {
