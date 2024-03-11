@@ -36,8 +36,8 @@ $(document).ready(function(){
         //타이핑종료
         setTimeout(function(){
           //1초후에 다시 타이핑 반복 시작
-          tyInt = setInterval(typing,150);
-        },400);
+          tyInt = setInterval(typing,100);
+        },350);
     } else if(liIndex==liLength-1){
 
       //마지막 문장까지 써지면 반복종료
@@ -85,10 +85,33 @@ $(document).ready(function(){
     $(this).parent().find('div:nth-child(2) img').animate({'top':'-880px'},6000);
   });
   P_04.mouseenter(function(){
-    $(this).parent().find('div:nth-child(2) img').animate({'top':'-666px'},5000);
+    $(this).parent().find('div:nth-child(2) img').animate({'top':'-786px'},5000);
   });
   pc_tool.mouseleave(function(){
     $(this).parent().find('div:nth-child(2) img').stop().animate({'top':'0px'},0);
+  });
+
+  // tablet 목업 ----------------------------------------------------------------------------
+  const t_tool = $('.t_tool');
+  const t_01 = $('.t_01');
+  const t_02 = $('.t_02');
+  const t_03 = $('.t_03');
+  const t_04 = $('.t_04');
+
+  t_01.mouseenter(function(){
+    $(this).parent().find('div:nth-child(4) img').stop().animate({'top':'-943px'},6000);
+  });
+  t_02.mouseenter(function(){
+    $(this).parent().find('div:nth-child(4) img').animate({'top':'-892px'},6000);
+  });
+  t_03.mouseenter(function(){
+    $(this).parent().find('div:nth-child(4) img').animate({'top':'-790px'},6000);
+  });
+  t_04.mouseenter(function(){
+    $(this).parent().find('div:nth-child(4) img').animate({'top':'-586px'},5000);
+  });
+  t_tool.mouseleave(function(){
+    $(this).parent().find('div:nth-child(4) img').stop().animate({'top':'0px'},0);
   });
 
   // mobile 목업 --------------------------------------------------------------------------
@@ -99,16 +122,16 @@ $(document).ready(function(){
   const m_04 = $('.m_04');
 
   m_01.mouseenter(function(){
-    $(this).parent().find('div:last-child img').stop().animate({'top':'-1482px'},8000);
+    $(this).parent().find('div:last-child img').stop().animate({'top':'-1243px'},8000);
   });
   m_02.mouseenter(function(){
     $(this).parent().find('div:last-child img').animate({'top':'-1018px'},6000);
   });
   m_03.mouseenter(function(){
-    $(this).parent().find('div:last-child img').animate({'top':'-1984px'},10000);
+    $(this).parent().find('div:last-child img').animate({'top':'-1662px'},10000);
   });
   m_04.mouseenter(function(){
-    $(this).parent().find('div:last-child img').animate({'top':'-1118px'},6000);
+    $(this).parent().find('div:last-child img').animate({'top':'-937px'},6000);
   });
   m_tool.mouseleave(function(){
     $(this).parent().find('div:last-child img').stop().animate({'top':'0px'},0);

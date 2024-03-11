@@ -35,7 +35,7 @@ main h4{font-size:1.5rem;line-height:200%;color:#777;}
 
 /* 컬러 */
 .color{
-  width:150px; height:150px;
+  width:120px; height:120px;
   border:1px solid #ccc;
   border-radius:50%;
   position:relative;
@@ -66,9 +66,25 @@ main h4{font-size:1.5rem;line-height:200%;color:#777;}
 .icon img{width:55% !important;}
 .button img{padding-top:10px;}
 
+/* 레이아웃 서식 */
+.layout > ul{display:flex; justify-content:space-around;padding:30px 0px;}
+.layout > ul > li{padding:30px 0px;}
+.layout > ul > li:first-child{width:10%;}
+.layout > ul > li:nth-child(2){width:23%;}
+.layout > ul > li:last-child{width:46%;}
+.layout > ul > li > h3{line-height:100px;}
+.layout > ul img{width:100%;border:1px solid #ccc;}
+
 /* 리스폰시브 서식 */
-.responsive > ul:first-of-type{display:flex;width:100%;justify-content:space-between;padding:30px 0px;}
-.responsive > ul > li b{padding-right:20px;}
-.responsive > ul:last-of-type > li:first-child img{width:100%;border:1px solid #ccc;}
-.responsive > ul:last-of-type > li:last-child{text-align:center;}
-.responsive > ul:last-of-type > li:last-child img{width:80%;margin-top:100px;}
+.responsive > ul{display:flex;justify-content:space-between;}
+.responsive > ul:first-of-type{width:100%;padding:30px 0px;}
+.responsive > ul:first-of-type > li b{padding-right:20px;}
+.responsive > ul:last-of-type{padding:30px 0px;}
+.responsive > ul:last-of-type > li:first-child{width:10%;}
+.responsive > ul:last-of-type > li:nth-child(2){width:32%;}
+.responsive > ul:last-of-type > li:last-child{width:49%;}
+.responsive > ul:last-of-type > li img{width:100%;border:1px solid #ccc;}
+
+/* 목업 서식 */
+.mockup{width:80%;margin:0px auto;padding:80px 0px;}
+.mockup > img{width:100%;}

@@ -27,7 +27,7 @@ $full:100%;
 
 // 헤더영역 서식 시작 ----------------------------------------------------------------------
 header{width:$full;}
-header h1{position:absolute;width:60px;right:40px;top:40px;}
+header h1{position:absolute;width:60px;right:40px;top:40px;z-index:100;}
 header h1 img{width:$full;}
 
 // 메인영역 서식 시작 ----------------------------------------------------------------------
@@ -59,10 +59,17 @@ header h1 img{width:$full;}
   top:230px; left:227px;
   height:459px;
 }
-.space_box li:first-child{background:$subColor01;border-left:none;}
-.space_box li:nth-child(2){background:$subColor02;}
-.space_box li:nth-child(3){background:#2F262F;}
-.space_box li:last-child{background:#232E2E;}
+.space_box li:first-child{background:$subColor01;border-left:none;animation:space_move 1s infinite;}
+.space_box li:nth-child(2){background:$subColor02;animation:space_move 2s infinite;}
+.space_box li:nth-child(3){background:#2F262F;animation:space_move 3s infinite;}
+.space_box li:last-child{background:#232E2E;animation:space_move 2s infinite;}
+@keyframes space_move{
+  0%{opacity:2;}
+  30%{opacity:1;}
+  60%{opacity:0.5;}
+  80%{opacity:1;}
+  100%{opacity:2;}
+}
 
 // 상단 jquery 문장 서식
 .document > p{
@@ -71,8 +78,7 @@ header h1 img{width:$full;}
   left:230px;
 }
 .document > p:first-child{top:170px;}
-.document > p:last-child{top:700px;}
-.document > p:last-child{color:$baseColor02;}
+.document > p:last-child{top:700px;color:$baseColor02;}
 .yellow01{color:$jsColor01;}
 .yellow02{color:$jsColor02;}
 .blue01{color:$jsColor03;}
@@ -81,25 +87,25 @@ header h1 img{width:$full;}
 
 // 중앙 타이틀 서식
 .title_box{
-  width:756px;
+  width:1350px;
   position:absolute;
   top:50%; left:50%;
-  transform:translate(-50%, -50%);
-  font-size:80px;
+  transform:translate(-35%, -50%);
+  font-size:75px;
   line-height:140%;
 }
 .typing-txt{display: none;}
-.title_box li:first-child{color:$subColor03;}
-.title_box li:nth-child(2){color:$subColor04;}
 .title_box li:first-child, .title_box li:nth-child(2){display:inline-block;}
-.title_box li:last-child{color:$subColor05;text-indent:80px;}
+.title_box li:first-child{color:$subColor03;}
+.title_box li:nth-child(2){color:$subColor04;margin-right:700px;}
+.title_box li:last-child{color:$jsColor01;}
+.title_box li:nth-last-child(2){color:$subColor05;text-indent:80px;}
 .on {display: inline-block; animation: cursor_ 0.3s infinite;} 
 @keyframes cursor_{ 
   0%{border-right: 3px solid #fff;} 
   50%{border-right: 3px solid #333;} 
   100%{border-right: 3px solid #fff;} 
 }
-.orange{color:$subColor04;}
 
 // 하단 스크롤 마우스 모양 서식
 .scroll_icon{
@@ -134,12 +140,21 @@ header h1 img{width:$full;}
 }
 .profile_img{
   width:600px;height:375px;
-  margin-top:7.5% !important;
+  margin-top:80px !important;
   position:absolute; top:140px; left:0px;
   border-radius:0px 40px 40px 0px;
   background:#000;
 }
 .profile_img video{width:500px; float:right;}
+.profile_title{
+  color:$baseColor02;
+  position:absolute; top:600px; left:100px;
+}
+.profile_title > h3{color:$subColor03; font-size:50px;}
+.profile_title > p{font-size:20px;padding:30px 0px;}
+.profile_title > p > span{padding:20px;font-size:35px; font-weight:bold; color:#ff5044;}
+.profile_title > p > span:first-child{padding-left:0px !important;}
+
 .profile_info{
   width:870px;height:550px;
   float:right;
@@ -148,21 +163,20 @@ header h1 img{width:$full;}
   border-radius:40px 0px 0px 40px;
   background:#FBF9F6;
 }
-.mbti{color:#3471cd;font-weight:bold;}
 .profile_info > h3{
   font-family:'Sunflower';
   font-size:24px;line-height:40px;
   padding-bottom:20px;
-  color:$subColor04
+  color:#3471cd;
 }
 .profile_info > ul{display:flex;}
 .profile_info > ul > li{width:410px;font-size:18px;line-height:34px;}
 .profile_info > ul > li:first-child{width:460px;}
+.profile_info > ul > li:first-child > p:nth-child(5),
 .profile_info > ul > li:first-child > p:nth-child(6),
 .profile_info > ul > li:first-child > p:nth-child(7),
-.profile_info > ul > li:first-child > p:nth-child(8),
-.profile_info > ul > li:first-child > p:nth-last-child(2),
-.profile_info > ul > li:first-child > p:last-child
+.profile_info > ul > li:first-child > p:nth-last-child(4),
+.profile_info > ul > li:first-child > p:nth-last-child(3)
 {text-indent:15px;}
 .tag{background:#000;color:$baseColor02; padding:5px 14px; border-radius:15px;font-size:16px;}
 .skill{position:relative;}
@@ -207,10 +221,13 @@ header h1 img{width:$full;}
 }
 
 // pc 목업
-.pc_img_1, .pc_img_2, .pc_img_3, .pc_img_4{width:536px; height:304px;top:116px;left:114px;}
+.pc_img_1, .pc_img_2, .pc_img_3, .pc_img_4{width:536px; height:304px;top:116px;left:264px;}
+
+// tablet 목업
+.t_img_1, .t_img_2, .t_img_3, .t_img_4{width:241px; height:319px;top:242px;left:41px;z-index:3;}
 
 // mobile 목업
-.m_img_1, .m_img_2, .m_img_3, .m_img_4{width:153px; height:269px;top:266px;left:589px;z-index:3;}
+.m_img_1, .m_img_2, .m_img_3, .m_img_4{width:128px; height:223px;top:339px;left:777px;z-index:3;}
 
 // 4. 프로젝트 2 ----------------------------------------------------------------------
 .bg02{background:$baseColor01;}
@@ -257,6 +274,10 @@ header h1 img{width:$full;}
   border-radius:30px;
   backface-visibility:hidden;
 }
+
+.d05 .back,.d06 .back{overflow:hidden;}
+
+.back img{width:100%;}
 .back .c_button, .back .c_button2{
   border:1px solid $baseColor01;
   border-radius:20px;
@@ -284,23 +305,25 @@ header h1 img{width:$full;}
 .d02 .front img{width:203%; transform:translateX(-36px);}
 .d02 .back{background:#494748;}
 .d02 .back li a, .d02 .card_info,
-.d06 .back li a, .d06 .card_info
+.d04 .back li a, .d04 .card_info
 {color:$baseColor02;}
-.d02 .back .c_button2, .d06 .back .c_button2{border:1px solid $baseColor02;}
+.d02 .back .c_button2, .d04 .back .c_button2{border:1px solid $baseColor02;}
 
 // 네케르 모달창
 .d03 .front img{width:104%;}
 .d03 .back{background:#FFC3B0;}
 
-// d04
-.d04 .back{background:#fff;}
+// 윤슬 UI/UX 디자인
+.d04 .front img{width:192%; transform:translateX(-100px);}
+.d04 .back{background:#73271a;}
 
 // d05
 .d05 .back{background:#fff;}
 
 // d06
-.d06 .front img{width:192%; transform:translateX(-100px);}
-.d06 .back{background:#73271a;}
+.d06 .back{background:#fff;}
+
+
 
 
 // 모달창 서식
@@ -317,8 +340,8 @@ header h1 img{width:$full;}
   transform:translate(-50%, -50%);
 }
 .modal div{max-width:540px;}
-.modal_2 div{max-width:800px;}
-.center img{width:100%;}
+.modal_2 div{max-width:950px;}
+.center img{width:100%;cursor:pointer;}
 
 .last_caption{text-align:center;color:#EBC87E;font-weight:500;}
 

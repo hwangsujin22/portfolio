@@ -19,6 +19,30 @@ section h2, section > article > p {
   font-size: 60px;
 }
 
+section > article:not(#profile > article, #design > article) > p:first-of-type {
+  position: absolute;
+  color: #9CDCFE;
+  left: 130px;
+  font-size: 35px;
+  padding: 20px 0px 0px 20px !important;
+}
+
+.m_cursor {
+  transform: translate(30px, 15px);
+  animation: m_cursor 2s infinite;
+}
+
+@keyframes m_cursor {
+  0% {
+    transform: translate(30px, 15px);
+  }
+  50% {
+    transform: translate(30px, 25px);
+  }
+  100% {
+    transform: translate(30px, 15px);
+  }
+}
 #profile > article > p, #project_1 > article > p, #project_2 > article > p, #project_3 > article > p, #project_4 > article > p {
   clear: both;
 }
@@ -70,40 +94,44 @@ section > article > p:not(#profile > article > p) {
   float: left;
 }
 
-.pc_img_1 img, .m_img_1 img, .pc_img_2 img, .m_img_2 img, .pc_img_3 img, .m_img_3 img, .pc_img_4 img, .m_img_4 img {
+.pc_tool img, .t_tool img, .m_tool img {
+  width: 100%;
+}
+
+.pc_img_1 img, .t_img_1 img, .m_img_1 img, .pc_img_2 img, .t_img_2 img, .m_img_2 img, .pc_img_3 img, .t_img_3 img, .m_img_3 img, .pc_img_4 img, .t_img_4 img, .m_img_4 img {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
 }
 
-.pc_tool {
-  width: 660px;
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  z-index: 2;
-}
-
-.pc_tool img {
-  width: 100%;
-}
-
-.pc_img_1, .pc_img_2, .pc_img_3, .pc_img_4, .m_img_1, .m_img_2, .m_img_3, .m_img_4 {
+.pc_img_1, .pc_img_2, .pc_img_3, .pc_img_4, .t_img_1, .t_img_2, .t_img_3, .t_img_4, .m_img_1, .m_img_2, .m_img_3, .m_img_4 {
   overflow: hidden;
   position: absolute;
 }
 
-.m_tool {
-  width: 300px;
+.pc_tool {
+  width: 660px;
   position: absolute;
-  top: 160px;
-  left: 520px;
+  top: 60px;
+  left: 200px;
+  z-index: 2;
+}
+
+.t_tool {
+  width: 330px;
+  position: absolute;
+  top: 200px;
+  left: 0px;
   z-index: 4;
 }
 
-.m_tool img {
-  width: 100%;
+.m_tool {
+  width: 250px;
+  position: absolute;
+  top: 250px;
+  left: 720px;
+  z-index: 4;
 }
 
 .pj_info {
