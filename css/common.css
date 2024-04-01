@@ -14,6 +14,11 @@ section {
   box-sizing: border-box;
 }
 
+section > article > p:last-of-type {
+  position: absolute;
+  bottom: 10%;
+}
+
 section h2, section > article > p {
   color: #EBC87E;
   font-size: 60px;
@@ -139,7 +144,7 @@ section > article > p:not(#profile > article > p) {
   color: #fff;
   width: 550px;
   height: 400px;
-  margin-top: 50px;
+  margin-top: 9vh;
   padding: 70px 70px 20px 0px;
   line-height: 36px;
 }

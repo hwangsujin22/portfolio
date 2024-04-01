@@ -87,10 +87,10 @@ header h1 img{width:$full;}
 
 // 중앙 타이틀 서식
 .title_box{
-  width:1350px;
+  width:1400px;
   position:absolute;
   top:50%; left:50%;
-  transform:translate(-35%, -50%);
+  transform:translate(-37%, -50%);
   font-size:75px;
   line-height:140%;
 }
@@ -141,14 +141,14 @@ header h1 img{width:$full;}
 .profile_img{
   width:600px;height:375px;
   margin-top:80px !important;
-  position:absolute; top:140px; left:0px;
+  position:absolute; top:17%; left:0px;
   border-radius:0px 40px 40px 0px;
   background:#000;
 }
 .profile_img video{width:500px; float:right;}
 .profile_title{
   color:$baseColor02;
-  position:absolute; top:600px; left:100px;
+  position:absolute; bottom:16%; left:100px;
 }
 .profile_title > h3{color:$subColor03; font-size:50px;}
 .profile_title > p{font-size:20px;padding:30px 0px;}
@@ -156,12 +156,13 @@ header h1 img{width:$full;}
 .profile_title > p > span:first-child{padding-left:0px !important;}
 
 .profile_info{
-  width:870px;height:550px;
+  width:870px;height:540px;
   float:right;
   padding:20px 40px;
   line-height:30px;
   border-radius:40px 0px 0px 40px;
   background:#FBF9F6;
+  margin-top:3vh !important;
 }
 .profile_info > h3{
   font-family:'Sunflower';
@@ -212,7 +213,7 @@ header h1 img{width:$full;}
 // 3. 프로젝트 1 ----------------------------------------------------------------------
 #project_1, #project_2, #project_3, #project_4{position:relative;}
 .bg{
-  width:100%; height:440px;
+  width:100%; height:46vh;
   position:absolute;
   top:50%;left:0px;
   transform:translateY(-50%);
@@ -248,7 +249,7 @@ header h1 img{width:$full;}
 #design_box > ul > li{margin:20px 20px 0px;}
 #design_box > ul > li:nth-child(2),
 #design_box > ul > li:nth-child(4),
-#design_box > ul > li:last-child{padding-top:130px;}
+#design_box > ul > li:last-child{padding-top:20vh;}
 .card{
   width:210px; height:300px;
   border-radius:30px;
@@ -324,8 +325,6 @@ header h1 img{width:$full;}
 .d06 .back{background:#fff;}
 
 
-
-
 // 모달창 서식
 .modal, .modal_2{
   width:100%; height:100%;
@@ -343,7 +342,12 @@ header h1 img{width:$full;}
 .modal_2 div{max-width:950px;}
 .center img{width:100%;cursor:pointer;}
 
-.last_caption{text-align:center;color:#EBC87E;font-weight:500;}
+.last_caption{
+  text-align:center;
+  color:#EBC87E;
+  font-weight:500;
+  position:absolute;bottom:10%;left:35%;
+}
 
 // 페이지네이션(gnb) ----------------------------------------------------------------------
 // gnb 서식
