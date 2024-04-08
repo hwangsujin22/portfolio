@@ -79,7 +79,7 @@ $(document).ready(function(){
     $(this).parent().find('div:nth-child(2) img').stop().animate({'top':'-950px'},6000);
   });
   p_02.mouseenter(function(){
-    $(this).parent().find('div:nth-child(2) img').animate({'top':'-892px'},6000);
+    $(this).parent().find('div:nth-child(2) img').animate({'top':'-632px'},4000);
   });
   p_03.mouseenter(function(){
     $(this).parent().find('div:nth-child(2) img').animate({'top':'-880px'},6000);
@@ -102,7 +102,7 @@ $(document).ready(function(){
     $(this).parent().find('div:nth-child(4) img').stop().animate({'top':'-943px'},6000);
   });
   t_02.mouseenter(function(){
-    $(this).parent().find('div:nth-child(4) img').animate({'top':'-892px'},6000);
+    $(this).parent().find('div:nth-child(4) img').animate({'top':'-474px'},4000);
   });
   t_03.mouseenter(function(){
     $(this).parent().find('div:nth-child(4) img').animate({'top':'-790px'},6000);
@@ -125,7 +125,7 @@ $(document).ready(function(){
     $(this).parent().find('div:last-child img').stop().animate({'top':'-1243px'},8000);
   });
   m_02.mouseenter(function(){
-    $(this).parent().find('div:last-child img').animate({'top':'-1018px'},6000);
+    $(this).parent().find('div:last-child img').animate({'top':'-818px'},6000);
   });
   m_03.mouseenter(function(){
     $(this).parent().find('div:last-child img').animate({'top':'-1662px'},10000);
@@ -139,7 +139,7 @@ $(document).ready(function(){
 
   // 프로세스 모달창 띄우기 ------------------------------------------------------------------
   const process_btn01 = $('.process01');
-  // const process_btn02 = $('.process02');
+  const process_btn02 = $('.process02');
   const process_btn03 = $('.process03');
   const process_btn04 = $('.process04');
   const close_btn = $('i.fa-times');
@@ -147,9 +147,9 @@ $(document).ready(function(){
   process_btn01.click(function(){
     $('.p_modal01').show();
   });
-  // process_btn02.click(function(){
-  //   $('.p_modal02').show();
-  // });
+  process_btn02.click(function(){
+    $('.p_modal02').show();
+  });
   process_btn03.click(function(){
     $('.p_modal03').show();
   });

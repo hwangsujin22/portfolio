@@ -40,7 +40,7 @@ main h4{font-size:1.5rem;line-height:200%;color:#777;}
   position:relative;
   margin:40px 40px;
 }
-.color > p{position:absolute;bottom:-45px; left:34px;}
+.color > p{position:absolute;bottom:-45px; left:20px;}
 .c_box01{background:#E32929;}
 .c_box02{background:#fff;}
 .c_box03{background:#484848;}
