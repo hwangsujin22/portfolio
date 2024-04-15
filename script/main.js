@@ -94,15 +94,11 @@ $(document).ready(function(){
   // tablet 목업 ----------------------------------------------------------------------------
   const t_tool = $('.t_tool');
   const t_01 = $('.t_01');
-  const t_02 = $('.t_02');
   const t_03 = $('.t_03');
   const t_04 = $('.t_04');
 
   t_01.mouseenter(function(){
     $(this).parent().find('div:nth-child(4) img').stop().animate({'top':'-943px'},6000);
-  });
-  t_02.mouseenter(function(){
-    $(this).parent().find('div:nth-child(4) img').animate({'top':'-474px'},4000);
   });
   t_03.mouseenter(function(){
     $(this).parent().find('div:nth-child(4) img').animate({'top':'-790px'},6000);

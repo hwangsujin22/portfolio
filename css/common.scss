@@ -79,6 +79,7 @@ section > article > p:not(#profile > article > p){padding-top:100px;}
 
 // 웹사이트 버튼
 .web{position:absolute; bottom:0px;left:150px;}
+.web02{position:absolute; bottom:0px;left:300px;}
 
 // 목업 이미지
 .pj_1_mockup, .pj_2_mockup, .pj_3_mockup, .pj_4_mockup{
@@ -103,6 +104,9 @@ section > article > p:not(#profile > article > p){padding-top:100px;}
   position:absolute;top:60px;left:200px;
   z-index:2;
 }
+.p_02{
+  left:100px !important;
+}
 
 // tablet 목업
 .t_tool{
@@ -116,6 +120,9 @@ section > article > p:not(#profile > article > p){padding-top:100px;}
   width:250px;
   position:absolute;top:250px;left:720px;
   z-index:4;
+}
+.m_02{
+  left:620px !important;
 }
 
 // 프로젝트 사이트 설명

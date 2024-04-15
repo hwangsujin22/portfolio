@@ -429,7 +429,11 @@ header h1 img {
   left: 264px;
 }
 
-.t_img_1, .t_img_2, .t_img_3, .t_img_4 {
+.pc_img_2 {
+  left: 164px !important;
+}
+
+.t_img_1, .t_img_3, .t_img_4 {
   width: 241px;
   height: 319px;
   top: 242px;
@@ -443,6 +447,10 @@ header h1 img {
   top: 339px;
   left: 777px;
   z-index: 3;
+}
+
+.m_img_2 {
+  left: 677px !important;
 }
 
 .bg02 {
