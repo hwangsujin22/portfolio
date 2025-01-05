@@ -95,11 +95,11 @@ header h1 img{width:$full;}
   line-height:140%;
 }
 .typing-txt{display: none;}
-.title_box li:first-child, .title_box li:nth-child(2){display:inline-block;}
-.title_box li:first-child{color:$subColor03;}
-.title_box li:nth-child(2){color:$subColor04;margin-right:700px;}
+// .title_box li:first-child, .title_box li:nth-child(2){display:inline-block;}
+// .title_box li:first-child{color:$subColor03;}
+// .title_box li:nth-child(2){color:$subColor04;margin-right:700px;}
 .title_box li:last-child{color:$jsColor01;}
-.title_box li:nth-last-child(2){color:$subColor05;text-indent:80px;}
+.title_box li:first-child{color:$subColor05;text-indent:80px;}
 .on {display: inline-block; animation: cursor_ 0.3s infinite;} 
 @keyframes cursor_{ 
   0%{border-right: 3px solid #fff;} 

@@ -141,24 +141,11 @@ header h1 img {
   display: none;
 }
 
-.title_box li:first-child, .title_box li:nth-child(2) {
-  display: inline-block;
-}
-
-.title_box li:first-child {
-  color: #9CDCFE;
-}
-
-.title_box li:nth-child(2) {
-  color: #DD7E56;
-  margin-right: 700px;
-}
-
 .title_box li:last-child {
   color: #F1EEA3;
 }
 
-.title_box li:nth-last-child(2) {
+.title_box li:first-child {
   color: #A2FF78;
   text-indent: 80px;
 }
